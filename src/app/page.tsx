@@ -16,7 +16,7 @@ export default function Page() {
   );
 }
 
-export const products = [
+const products = [
   {
     title: "Downtown Map",
     link: "/downtown-map",
