@@ -97,8 +97,8 @@ export const HeroParallax = ({
           "-py-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] z-20",
           {
             "h-[350vh]": !isDesktop, // mobile
-            "h-[290vh]": isDesktop && !isLargeDesktop, // tablet/small desktop
-            "h-[230vh]": isLargeDesktop, // large desktop
+            "h-[280vh]": isDesktop && !isLargeDesktop, // tablet/small desktop
+            "h-[220vh]": isLargeDesktop, // large desktop
           }
         )}
       >

@@ -2,6 +2,7 @@
 import { useMediaQuery } from "@/hooks/use-media-query";
 import { useScroll, useTransform, motion } from "framer-motion";
 import React, { useEffect, useRef, useState } from "react";
+import { TextAnimate } from "./text-animate";
 
 interface TimelineEntry {
   title: string;
@@ -33,18 +34,34 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
     <div className="w-full relative font-sans md:px-10" ref={containerRef}>
       <div className="max-w-7xl mx-auto py-20 px-4 md:px-8 lg:px-10">
         <h2 className="text-4xl md:text-5xl mb-4 text-foreground max-w-4xl">
-          My Design Journey
+          <TextAnimate duration={0.5} animation="slideUp">
+            My Design Journey
+          </TextAnimate>
         </h2>
-        <p className="text-muted-foreground text-xl max-w-sm">
-          From jewelry design to digital media, here&apos;s how my creative
-          journey has evolved.
-        </p>
+        <span>
+          <TextAnimate
+            animation="slideLeft"
+            className="text-muted-foreground text-xl"
+          >
+            From jewelry design to digital media,
+          </TextAnimate>
+          <TextAnimate
+            animation="slideLeft"
+            className="text-muted-foreground text-xl"
+          >
+            here is how my creativey journey has evolved.
+          </TextAnimate>
+        </span>
       </div>
 
       <div ref={ref} className="relative max-w-7xl mx-auto pb-20">
         {data.map((item, index) => (
-          <div
+          <motion.div
             key={index}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.5, delay: 0.1 }}
             className="flex justify-start pt-10 md:pt-40 md:gap-10"
           >
             <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
@@ -62,7 +79,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </h3>
               {item.content}{" "}
             </div>
-          </div>
+          </motion.div>
         ))}
         <div
           style={{

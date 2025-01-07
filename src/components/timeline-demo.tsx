@@ -27,7 +27,7 @@ export function TimelineDemo() {
       ),
     },
     {
-      title: "Design Journey",
+      title: "My Journey",
       content: (
         <div>
           <p className="text-neutral-800 dark:text-neutral-200 text-md md:text-lg font-normal mb-8">
