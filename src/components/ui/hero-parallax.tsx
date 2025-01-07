@@ -96,7 +96,7 @@ export const HeroParallax = ({
         className={cn(
           "-py-20 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d] z-20",
           {
-            "h-[345vh]": !isDesktop, // mobile
+            "h-[350vh]": !isDesktop, // mobile
             "h-[290vh]": isDesktop && !isLargeDesktop, // tablet/small desktop
             "h-[230vh]": isLargeDesktop, // large desktop
           }
@@ -174,7 +174,7 @@ export const Header = () => {
   return (
     <div className="max-w-7xl relative mx-auto py-40 px-4 w-full left-0 top-0 z-90">
       <motion.h1
-        className="text-5xl md:text-7xl font-bold"
+        className="text-4xl md:text-7xl font-bold"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -206,7 +206,7 @@ export const Header = () => {
         </motion.span>
       </motion.h1>
       <motion.p
-        className="max-w-2xl font-bold text-xl md:text-2xl mt-8 text-foreground"
+        className="max-w-2xl font-bold text-lg md:text-2xl mt-8 text-foreground"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8, duration: 0.5 }}
