@@ -15,8 +15,8 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Image from "next/image";
-import { TextAnimate } from "./ui/text-animate";
 import { motion } from "framer-motion";
+import { TextAnimate } from "../ui/text-animate";
 
 const formSchema = z.object({
   name: z.string().min(2, {
