@@ -32,7 +32,7 @@ export const ProjectHero = ({
       </motion.div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-10 max-w-[650px]">
+      <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-10 max-w-[375px] sm:max-w-[450px] md:max-w-[650px]">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}

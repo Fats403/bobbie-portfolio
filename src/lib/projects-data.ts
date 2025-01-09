@@ -88,7 +88,7 @@ export const projectData = [
   {
     title: "Astral",
     subtitle: "Cosmic-themed sparkling water brand with celestial aesthetics",
-    categories: ["Branding", "Packaging Design", "Video Production"],
+    categories: ["Branding", "Packaging Design"],
     description:
       "A fictional sparkling water brand that brings the magic of the cosmos to everyday hydration. The project encompassed creating a cohesive brand identity, designing packaging for various flavors, and producing promotional content - all while maintaining a celestial aesthetic that makes each sip feel like a taste of stardust.",
     link: "/astral",
