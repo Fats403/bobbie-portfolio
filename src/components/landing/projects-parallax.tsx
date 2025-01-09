@@ -27,6 +27,7 @@ const HeroParallax = ({
     title: string;
     link: string;
     thumbnail: string;
+    lowResLink: string;
   }[];
 }) => {
   const isDesktop = useMediaQuery("(min-width: 768px)");
@@ -275,6 +276,7 @@ export const ProductCard = ({
     title: string;
     link: string;
     thumbnail: string;
+    lowResLink: string;
   };
   translate: MotionValue<number>;
   rowIndex?: number;
@@ -303,7 +305,7 @@ export const ProductCard = ({
         className="block group-hover/product:shadow-2xl"
       >
         <Image
-          src={product.thumbnail}
+          src={product.lowResLink}
           height="600"
           width="600"
           className="object-cover object-left-top absolute h-full w-full inset-0 rounded-xl"

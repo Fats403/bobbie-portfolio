@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       {
         hostname: "firebasestorage.googleapis.com",
       },
+      {
+        hostname: "images.unsplash.com",
+      },
     ],
   },
 };
