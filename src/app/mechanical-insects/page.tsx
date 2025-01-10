@@ -12,7 +12,6 @@ export default function Page() {
       <ProjectHero
         title={mechanicalInsectsProject?.title || ""}
         subtitle={mechanicalInsectsProject?.subtitle || ""}
-        description={mechanicalInsectsProject?.description || ""}
         image={mechanicalInsectsProject?.thumbnail || ""}
         categories={mechanicalInsectsProject?.categories || []}
       />

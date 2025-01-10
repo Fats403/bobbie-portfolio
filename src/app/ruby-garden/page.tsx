@@ -12,7 +12,6 @@ export default function Page() {
       <ProjectHero
         title={rubyGardenProject?.title || ""}
         subtitle={rubyGardenProject?.subtitle || ""}
-        description={rubyGardenProject?.description || ""}
         image={rubyGardenProject?.thumbnail || ""}
         categories={rubyGardenProject?.categories || []}
       />

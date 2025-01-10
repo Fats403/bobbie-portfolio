@@ -12,7 +12,6 @@ export default function Page() {
       <ProjectHero
         title={hatshepsutProject?.title || ""}
         subtitle={hatshepsutProject?.subtitle || ""}
-        description={hatshepsutProject?.description || ""}
         image={hatshepsutProject?.thumbnail || ""}
         categories={hatshepsutProject?.categories || []}
       />

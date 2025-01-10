@@ -1,4 +1,3 @@
-"use client";
 import { ProjectHero } from "@/components/project/project-hero";
 import { projectData } from "@/lib/projects-data";
 
@@ -12,7 +11,6 @@ export default function Page() {
       <ProjectHero
         title={braggCreekProject?.title || ""}
         subtitle={braggCreekProject?.subtitle || ""}
-        description={braggCreekProject?.description || ""}
         image={braggCreekProject?.thumbnail || ""}
         categories={braggCreekProject?.categories || []}
       />

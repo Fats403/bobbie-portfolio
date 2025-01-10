@@ -12,7 +12,6 @@ export default function Page() {
       <ProjectHero
         title={downtownMapProject?.title || ""}
         subtitle={downtownMapProject?.subtitle || ""}
-        description={downtownMapProject?.description || ""}
         image={downtownMapProject?.thumbnail || ""}
         categories={downtownMapProject?.categories || []}
       />

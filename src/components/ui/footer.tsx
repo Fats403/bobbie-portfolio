@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="w-full py-6 text-center relative z-50">
+    <footer className="w-full py-6 text-center relative z-40">
       <div className="flex items-center justify-center gap-4">
         <Link
           href="https://www.linkedin.com/in/qiwen-ye"

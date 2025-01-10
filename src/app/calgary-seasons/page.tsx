@@ -12,7 +12,6 @@ export default function Page() {
       <ProjectHero
         title={calgarySeasonsProject?.title || ""}
         subtitle={calgarySeasonsProject?.subtitle || ""}
-        description={calgarySeasonsProject?.description || ""}
         image={calgarySeasonsProject?.thumbnail || ""}
         categories={calgarySeasonsProject?.categories || []}
       />
