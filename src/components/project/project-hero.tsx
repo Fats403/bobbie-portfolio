@@ -18,20 +18,28 @@ export const ProjectHero = ({
   categories,
 }: ProjectHeroProps) => {
   return (
-    <div className="relative min-h-[60vh] sm:min-h-[70vh] w-full overflow-hidden">
-      {/* Background Image with Parallax */}
-      <motion.div
-        initial={{ scale: 1.2 }}
-        animate={{ scale: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        className="absolute inset-0"
-      >
-        <Image src={image} alt={title} fill className="object-cover" priority />
-        <div className="absolute inset-0 bg-black/50" />
-      </motion.div>
+    <div className="relative min-h-[60vh] sm:min-h-[70vh] w-full">
+      {/* Create a wrapper for the image and overlay that will be masked */}
+      <div className="absolute inset-0 overflow-hidden [mask-image:url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMTAwIDEwMCIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCwwIEwxMDAsMCBMMTAwLDg1IEM3NSw5OCAyNSw5OCAwLDg1IEwwLDAgWiIgZmlsbD0iYmxhY2siLz48L3N2Zz4=')] [mask-size:100%_100%]">
+        <motion.div
+          initial={{ scale: 1.2 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          className="absolute inset-0"
+        >
+          <Image
+            src={image}
+            alt={title}
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-black/50" />
+        </motion.div>
+      </div>
 
       {/* Content Overlay */}
-      <div className="absolute inset-0 flex flex-col justify-end p-4 sm:p-10 max-w-[375px] sm:max-w-[450px] md:max-w-[650px]">
+      <div className="absolute inset-0 flex flex-col mb-24 justify-end p-4 sm:p-10 max-w-[375px] sm:max-w-[450px] md:max-w-[650px]">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}

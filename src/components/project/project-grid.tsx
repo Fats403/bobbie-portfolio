@@ -8,14 +8,14 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 export interface GridImage {
   url: string;
-  colSpan?: 1 | 2 | 3; // Number of columns this image should span
-  rowSpan?: 1 | 2; // Optionally support row spans too
+  colSpan?: 1 | 2 | 3 | 4;
+  rowSpan?: 1 | 2 | 3;
 }
 
 interface ProjectGridProps {
   images: GridImage[];
   className?: string;
-  maxColumns?: 2 | 3 | 4; // Allow configurable max columns
+  maxColumns?: 2 | 3 | 4;
 }
 
 export function ProjectGrid({
@@ -71,8 +71,10 @@ export function ProjectGrid({
                   "md:col-span-1": !image.colSpan || image.colSpan === 1,
                   "md:col-span-2": image.colSpan === 2,
                   "md:col-span-3": image.colSpan === 3,
+                  "md:col-span-4": image.colSpan === 4,
                   "md:row-span-1": !image.rowSpan || image.rowSpan === 1,
                   "md:row-span-2": image.rowSpan === 2,
+                  "md:row-span-3": image.rowSpan === 3,
                 }
               )}
               onClick={() => setSelectedImageIndex(index)}

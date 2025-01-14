@@ -9,7 +9,7 @@ export default function ProjectDescription({
   description: string;
 }) {
   return (
-    <div className="max-w-4xl mx-auto mt-12 px-4">
+    <div className="max-w-4xl mx-auto mt-6 px-4">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

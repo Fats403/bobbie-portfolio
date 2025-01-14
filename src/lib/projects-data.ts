@@ -54,7 +54,7 @@ export const projectData = [
       "Animated illustration capturing Calgary's landmarks and daily life",
     categories: ["Graphic Design", "Illustration", "Animation"],
     description:
-      "This project features a graphic design of downtown Calgary, with illustrations of iconic landmarks and daily life scenes that highlight my skills in observation and digital storytelling. The goal was to demonstrate expertise in Adobe Illustrator and create an animation showcasing Calgary's beauty. I started with sketches and storyboards, selected a specific color palette, and used gradient layers to add contrast. After completing the design, I sequenced the layers and imported them into After Effects for animation. While there's room for improvement in workflow, I'm pleased with the colorful and detailed outcome that captures Calgary's unique character.",
+      "This project features a digital illustration of downtown Calgary, showcasing iconic landmarks and city life. Using Adobe Illustrator and After Effects, I created an animated design that highlights the city's character through careful color selection and gradient layers. The process began with sketches and storyboards before moving to digital execution. While the workflow could be streamlined, the final piece successfully captures Calgary's vibrant essence through detailed illustration and animation.",
     link: "/our-city-calgary",
     lowResLink:
       "https://firebasestorage.googleapis.com/v0/b/capturescape-b4385.firebasestorage.app/o/bobbie-low-quality%2Four-city-calgary.webp?alt=media&token=2edcedd6-d93b-4b5a-b031-4c77d9ae9d1e",
